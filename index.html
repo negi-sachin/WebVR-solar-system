@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+  
+    <a-scene>
+      <a-assets>
+        <img src="./bgspace.jpg" id="bg">
+        <img src="earth.jpg" id="earth">
+        <img src="mercury.jpg" id="mercury">
+        <img src="venus.jpg" id="venus">
+        <img src="sun.jpg" id="sun">
+      </a-assets>
+      <a-sphere position="2 1 -3" radius=".5" src="#earth"></a-sphere>
+      <a-sphere position="-3 2 -10" src="#venus"></a-sphere>
+      <a-sphere position="0 1 -15" src="#mercury"></a-sphere>
+      <a-sphere position="-5 9 -100" radius="20" src="#sun"></a-sphere>
+      <a-light type="point" intensity="4" color="#F9EE04" position="-5 9 -90"></a-light>
+      <a-light color="white" intensity="1" position="0 0 5"></a-light>
+      <a-sky src="#bg" ></a-sky>
+    </a-scene>
+  </body>
+</html>
